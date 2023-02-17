@@ -14,5 +14,5 @@ sudo npm install
 #If your are using PM2. use below commands(un-comment)
 
 #pm2 start cms.js
-
-pm2 -f restart cms
+pm2 start cms.js --name"node"
+#pm2 -f restart cms
