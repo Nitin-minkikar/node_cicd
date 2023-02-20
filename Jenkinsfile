@@ -1,13 +1,13 @@
 pipeline {
 environment {
-        EMAIL_TO = 'nagendrababusuramsetty2140@gmail.com'
+        EMAIL_TO = 'nagendrababusuramsetty2140@gmail.com, kommisettydinesh@gmail.com'
     }
     agent any
     stages {
         stage("deploy"){
             steps {
                 sshagent(['Nodejs']) {
-                    sh "ssh ubuntu@13.126.249.23 /home/ubuntu/hello.sh"
+                    sh "ssh jenkins@13.233.200.41 /home/jenkins/nani.sh"
                 }
             }
         }
