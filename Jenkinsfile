@@ -1,6 +1,6 @@
 pipeline {
 environment {
-        EMAIL_TO = 'nagendrababusuramsetty2140@gmail.com, nagendra.s@fssglobal.in'
+        EMAIL_TO = 'nagendrababusuramsetty2140@gmail.com'
     }
     agent any
     stages {
