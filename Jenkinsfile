@@ -6,7 +6,7 @@ environment {
     stages {
         stage("deploy"){
             steps {
-                sshagent(['Nodej']) {
+                sshagent(['Nodejs']) {
                     sh "ssh -o StrictHostKeyChecking=no jenkins@13.233.200.41 /home/jenkins/nani.sh"
                 }
             }
