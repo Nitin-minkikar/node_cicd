@@ -12,7 +12,8 @@ pipeline {
         stage("deploy"){
             steps {
                 sshagent(['Nodejs']) {
-                    sh "scp -r -o StrictHostKeyChecking=no ubuntu@3.108.65.199 /opt/"
+                    sh "scp -r -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/multi-branch_master/* ubuntu@3.108.65.199 /opt/"
+                    sh "ssh ubuntu@3.108.65.199 /opt/npm.sh"
                 }
             }
         }
