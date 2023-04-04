@@ -1,13 +1,13 @@
 pipeline {
-environment {
-        EMAIL_TO = 'nagendrababusuramsetty2140@gmail.com'
-    }
+// environment {
+//         EMAIL_TO = 'nagendrababusuramsetty2140@gmail.com'
+//     }
     agent any
     stages {
         stage("deploy"){
             steps {
                 sshagent(['Nodejs']) {
-                    sh "ssh -o StrictHostKeyChecking=no jenkins@13.233.200.41 /home/jenkins/nani.sh"
+                    sh "scp -r -o StrictHostKeyChecking=no ubuntu@3.108.65.199 /opt/"
                 }
             }
         }
