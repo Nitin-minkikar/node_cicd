@@ -4,11 +4,11 @@ pipeline {
 //     }
     agent any
     stages {
-        stage("clone code") {
-            steps {
-                git url: 'https://github.com/Nagendra2140/node_cicd.git'
-            }
-        }
+//         stage("clone code") {
+//             steps {
+//                 git url: 'https://github.com/Nagendra2140/node_cicd.git'
+//             }
+//         }
         stage("deploy"){
             steps {
                 sshagent(['Nodejs']) {
