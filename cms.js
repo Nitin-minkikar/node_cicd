@@ -5,7 +5,7 @@ app.set('port', (process.env.PORT || 7000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('Hello Nagendra it is master branch')
+  response.send('Hello Nagendra it is master')
 })
 
 app.listen(app.get('port'), function() {
