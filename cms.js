@@ -5,7 +5,7 @@ app.set('port', (process.env.PORT || 7000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('Hello Nagendra it is master new code is not working so rollback to old code')
+  response.send('Hello Nagendra it is master new code is working so deployment is successfull')
 })
 
 app.listen(app.get('port'), function() {
