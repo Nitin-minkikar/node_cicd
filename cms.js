@@ -5,9 +5,9 @@ app.set('port', (process.env.PORT || 7000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('Hello Nagendra it is v1.3')
+  response.send('Hello Nagendra it is v1.4')
 })
 
 app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port')))))))0
+  console.log("Node app is running at localhost:" + app.get('port'))
 })
