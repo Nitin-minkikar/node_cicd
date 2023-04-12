@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("clone code") {
             steps {
-                sh "rm -r *"
+                sh "rm -r *dqwqqdqwdwdqwdedqwd"
                 git url: 'https://github.com/Nagendra2140/node_cicd.git'
             }
         }
