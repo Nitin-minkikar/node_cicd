@@ -15,7 +15,7 @@ npm install
 npm start (or) node cms.js
 ```
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
+Your app should now be running on [localhost:5000](http://localhost:7000/).
 
 If you are using jenkins file for the first time it won't work it shows error.
 
