@@ -9,7 +9,7 @@ Node.js app using [Express 4](http://expressjs.com/).
 Make sure you have [Node.js](http://nodejs.org/).
 
 ```sh
-git clone git@github.com:heroku/node-js-sample.git # or clone your own fork
+git clone https://github.com/Nagendra2140/node_cicd.git # or clone your own fork
 cd node-js-sample
 npm install
 npm start (or) node cms.js
